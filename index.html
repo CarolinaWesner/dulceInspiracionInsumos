@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dulce inspiración - Insumos pasteleria</title>
+    <link rel="shortcut icon" href="images\palo-icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css\style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Shippori+Antique+B1&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  </head>
+  <body>
+    <header class="sticky-top">
+      <!-- Línea superior -->
+      <div class="bg-dark text-white text-center py-1">
+        <small>¡6 cuotas sin interés en compras mayores a $80000!</small>
+      </div>
+
+      <div class="bg-light py-2">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+          
+          <!-- Logo -->
+          <a href="index.html" class="navbar-brand">
+            <img
+              src="images/logo.png"
+              alt="Logo"
+              style="max-height: 80px" />
+          </a>
+      
+          <!-- Barra de búsqueda -->
+          <form class="d-flex flex-grow-1 mx-3">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar productos"
+              aria-label="Buscar" />
+            <button class="btn btn-outline-primary" type="submit">
+              Buscar
+            </button>
+          </form>
+      
+          <!-- Mi cuenta y carrito -->
+          <div class="d-flex align-items-center flex-column flex-md-row mt-3 mt-md-0">
+            <a href="#" class="text-dark me-3 text-decoration-none">
+              <i class="bi bi-person-circle"></i> Mi Cuenta
+            </a>
+            <a href="carrito.html" class="text-dark text-decoration-none position-relative">
+              <i class="bi bi-cart-fill"></i> Carrito
+              <span class="position-absolute top-0 start-100 translate-middle badge bg-danger">0</span>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- Línea inferior (Menú) -->
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-around mx-auto">
+              <li class="nav-item me-5">
+                <a class="nav-link text-white fs-5" style="letter-spacing: 1px;" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link text-white fs-5" id="productos-ref" style="letter-spacing: 1px;">Productos</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link text-white fs-5" style="letter-spacing: 1px;" href="#" >Cursos</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link text-white fs-5" style="letter-spacing: 1px;" href="#">Contáctanos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="seccion-principal">
+      <!-- Banner-->
+      <section class="banner">
+        <div>
+          <img
+            src="images\banner\banner.png"
+            alt="banner"
+            width="100%"
+            height="auto"
+          />
+        </div>
+      </section>
+
+      <!-- Productos destacados-->
+      <section class="prod_destacados">
+        <h2>PRODUCTOS DESTACADOS</h2>
+        <div class="productos">
+          <div class="producto">
+            <div class="img_producto">
+              <img src="images\productos\manga2.png" alt="manga" />
+            </div>
+            <div class="info_producto">
+              <h4>Mangas X4</h4>
+              <h5>Precio: $ 5000</h5>
+              <button class="agregar-carrito" data-id=3>Añadir al carrito</button>
+            </div>
+          </div>
+
+          <div class="producto">
+            <div class="img_producto">
+              <img src="images\productos\cortantes.png" alt="cortantes" />
+            </div>
+            <div class="info_producto">
+              <h4>Cortantes</h4>
+              <h5>Precio: $ 6000</h5>
+              <button class="agregar-carrito" data-id=2>Añadir al carrito</button>
+            </div>
+          </div>
+
+          <div class="producto">
+            <div class="img_producto">
+              <img src="images\productos\picos.jpg" alt="picos" />
+            </div>
+            <div class="info_producto">
+              <h4>Set de picos
+              <h5>Precio: $ 6500</h5>
+              <button class="agregar-carrito" data-id=3>Añadir al carrito</button>
+            </div>
+          </div>
+
+          <div class="producto">
+            <div class="img_producto">
+              <img src="images\productos\palo2.jpg" alt="palo" />
+            </div>
+            <div class="info_producto">
+              <h4>Palo de amasar</h4>
+              <h5>Precio: $ 10000</h5>
+              <button class="agregar-carrito" data-id=4>Añadir al carrito</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seccion de cursos-->
+      <section class="cursosDisponibles">
+        <h2>CURSOS</h2>
+        <div class="cursos">
+          <div class="curso">
+            <img
+              src="images\banner\tallerPasteleria.png"
+              alt="Taller pasteleria"
+            />
+          </div>
+
+          <div class="curso">
+            <img
+              src="images\banner\tallerRepostria.png"
+              alt="Curso de pasteleria artesanal"
+            />
+          </div>
+
+          <div class="curso">
+            <img
+              src="images\banner\tallerChocolate.png"
+              alt="Taller de chocolates"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Videos de recetas-->
+      <section class="recetas">
+        <h2>SEGUINOS EN YOUTUBE</h2>
+        <div class="receta">
+          <div class="video">
+            <iframe
+              src="https://www.youtube.com/embed/GsgzsFWT_qs"
+              title="Chocotorta clásica para cumpleaños"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mapa como llego-->
+      <section class="comoLlego">
+        <h2>COMO LLEGAR</h2>
+        <div class="mapa">
+          <div class="video">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.941168005691!2d-58.408537924524566!3d-34.60564915759969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf2a00d73df%3A0xc90b4ce1a7523378!2sAv.%20Pueyrred%C3%B3n%20400%2C%20C1032ABQ%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1728233395407!5m2!1ses-419!2sar"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dejanos tu consulta-->
+      <section class="consultas">
+        <h2>DEJANOS TU CONSULTA</h2>
+        <div class="formulario">
+          <form action="https://formspree.io/f/mkgnwbre" method="POST">
+            <div class="form-item-nombre">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required />
+            </div>
+            <div class="form-item-apellido">
+              <label for="apellido">Apellido:</label>
+              <input type="text" id="apellido" name="apellido" required />
+            </div>
+            <div class="form-item-email">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-item-mensaje">
+              <label for="mensaje">Comentario:</label>
+              <textarea
+                id="mensaje"
+                name="message"
+                placeholder="Escribe un mensaje"
+                required
+              ></textarea>
+            </div>
+            <div class="form-boton">
+              <input type="submit" name="enviar" value="Enviar" />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--Reseñas -->
+    <section class="container-reseña">
+      <h2>OPINIONES DE NUESTROS CLIENTES</h2>
+      <div class="reseñas">
+        <div class="reseña">
+          <h3>¡Excelentes productos y calidad!</h3>
+          <p>
+            “Siempre encuentro lo que necesito para mis pasteles aquí. La
+            calidad es increíble, y la entrega es muy rápida. Definitivamente es
+            mi tienda de confianza para insumos de pastelería.”
+          </p>
+          <cite> --Hernán-- </cite>
+        </div>
+
+        <div class="reseña">
+          <h3>Cursos completos y fáciles de seguir</h3>
+          <p>
+            “Tomé el curso de tortas y fue una experiencia maravillosa. Las
+            explicaciones son claras, y los instructores están siempre
+            dispuestos a ayudar. ¡Recomiendo muchísimo!”
+          </p>
+          <cite> --Filipa-- </cite>
+        </div>
+
+        <div class="reseña">
+          <h3>Gran variedad y atención personalizada</h3>
+          <p>
+            “Siempre me sorprende la variedad de productos que tienen. Además,
+            el equipo de atención me ayudó a elegir lo mejor para mis proyectos.
+            ¡Muy recomendable!”
+          </p>
+          <cite> --Belén-- </cite>
+        </div>
+
+        <div class="reseña">
+          <h3>Los mejores ingredientes</h3>
+          <p>
+            “La calidad de los ingredientes que venden es insuperable. Desde
+            chocolates hasta colorantes, todo lo que he comprado me ha dado
+            resultados excelentes en mis postres.”
+          </p>
+          <cite> --Josefina-- </cite>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-light pt-4">
+      <div class="container">
+        <div class="row">
+          <!-- Redes sociales -->
+          <div class="col-md-4 col-sm-6 mb-4">
+            <h5>Conéctate con nosotros</h5>
+            <div class="d-flex gap-4">
+              <a href="#" class="text-light"><i class="fab fa-facebook fa-2x"></i></a>
+              <a href="#" class="text-light"><i class="fab fa-twitter fa-2x"></i></a>
+              <a href="#" class="text-light"><i class="fab fa-instagram fa-2x"></i></a>
+              <a href="#" class="text-light"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+          </div>
+    
+          <!-- Secciones -->
+          <div class="col-md-4 col-sm-6 mb-4">
+            <h5>Secciones</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light text-decoration-none">Inicio</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Productos</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Cursos</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Contáctanos</a></li>
+            </ul>
+          </div>
+    
+          <!-- Información de contacto -->
+          <div class="col-md-4 col-sm-6 mb-4">
+            <h5>Contacto</h5>
+            <p class="mb-1"><i class="fas fa-phone"></i> 1170324586</p>
+            <p class="mb-1"><i class="fas fa-envelope"></i> dulceInspiracion@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Derechos reservados -->
+      <div class="text-center bg-secondary text-light py-3 mt-4">
+        <p class="mb-0">2024 Carolina Wesner. Curso Front-End JS Talento Tech.</p>
+      </div>
+    </footer>
+
+    <!--JS-->
+    <script src="js\productos.js"></script>
+    <script src="js\index.js"></script>
+  </body>
+</html>

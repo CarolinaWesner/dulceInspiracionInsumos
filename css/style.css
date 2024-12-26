@@ -1,0 +1,338 @@
+body{
+    font-size: 16px;
+}
+
+header{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+nav{
+    background: linear-gradient(90deg, #8D0B41, #ca013a);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.468);
+
+}
+#navbarNav {
+    color: #ffffff; /* Texto blanco */
+    font-size: 16px; /* Tamaño de fuente inicial */
+    transition: transform 0.2s ease, font-size 0.2s ease; }
+
+#navbarNav li:hover {
+    font-size: 20px; /* Aumenta el tamaño del texto al pasar el mouse */
+    transform: scale(1.1); /* Escala ligeramente el elemento */
+  }
+
+.prod_destacados, .cursosDisponibles{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
+}
+
+
+.prod_destacados h2, .cursosDisponibles h2, .recetas h2, .comoLlego h2, .consultas h2, .container-reseña h2,
+#carrito h2, #msj-vacio{
+    color:rgb(57, 52, 47);
+    text-align: center;
+    font-size:x-large;
+    letter-spacing: 5px; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.468);
+    font-family: "Shippori Antique B1", sans-serif;
+    border-bottom: 3px solid #8D0B41; /* Línea */
+    padding-bottom: 8px;
+}
+
+.productos, .cursos {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center; 
+    gap: 15px; 
+    width: 100%;
+}
+
+.producto {
+    padding: 10px; 
+    margin: 10px; 
+    flex: 1 1 200px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.311)
+    }
+
+.producto:hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.1);
+}
+
+.img_producto img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.info_producto {
+    text-align: center;
+    color: #050505;
+}
+
+.info_producto h4 {
+    font-size: large;
+    font-family:"Quicksand", sans-serif;
+    padding: 5px;
+}
+
+.info_producto h5{
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    color: #8D0B41;
+    padding-bottom: 5px;
+    
+}
+.info_producto button, .form-boton input, #totalCarrito button, #btn-volver{
+    background: linear-gradient(90deg, #8D0B41, #ca013a);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*.cursosDisponibles{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
+}*/
+
+.cursos{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+.curso {
+    flex: 1 1 200px; 
+    margin: 30px;
+    padding: 0px;
+    box-sizing: border-box; 
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.311);
+    
+}
+
+.curso :hover{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.1);
+}
+
+.curso img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.prod_destacados, .cursosDisponibles{
+    margin: 0 25vh; 
+}
+
+.recetas, .comoLlego{
+    margin: 0px;
+    padding: 15px;
+    border: 2px;
+    align-items: center;
+}
+.receta, .mapa{
+    display: flex;
+    justify-content: center;
+    padding: 20px; 
+    margin: 0;
+    border-radius: 15px;
+}
+.video {
+    width: 100%;
+    max-width: 800px;    /* Ancho máximo para que no se expanda demasiado en pantallas grandes */
+    aspect-ratio: 16 / 9; /* Mantiene la relación de aspecto 16:9 para videos de YouTube */
+    position: relative;
+}
+
+.video iframe {
+    width: 100%;
+    height: 100%;
+    min-width: 300px;    /* Ancho mínimo en pantallas pequeñas */
+    border: none;
+    border-radius: 8px;  /* Opcional: redondear bordes */
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.311);
+}
+
+
+.consultas{
+    margin: 0px;
+    font-family: "Chivo", sans-serif;
+    margin: 0 15%;
+    padding: 15px;
+}
+
+.formulario{
+    background-color: #fed9e9e1;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.311);
+}
+
+form{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.form-item-nombre,.form-item-apellido,.form-item-email {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item-nombre {
+  grid-column: 1 / 2;
+}
+
+.form-item-apellido {
+  grid-column: 2 / 3;
+}
+
+.form-item-email {
+  grid-column: 3 / 4;
+}
+
+.form-item-mensaje {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-boton {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+@media (width< 768px) {
+    .formulario form {
+      grid-template-columns: 1fr;
+    }
+  
+    .form-item-nombre,
+    .form-item-apellido,
+    .form-item-email,
+    .form-item-mensaje,
+    .form-boton {
+      grid-column: 1 / -1;
+    }
+  }
+.container-reseña{
+    padding: 15px;
+}
+.reseñas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+.reseña{
+    background-color: #8d0b411a;
+    text-align:center;
+    justify-content: center;
+    font-family: "Chivo", sans-serif;
+    font-style: oblique;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.311);
+}
+.reseña h4 h3{
+    padding-bottom: 10px;
+}
+
+.reseña cite{
+    color: #8D0B41;
+    text-align: right;
+}
+
+.reseñas :hover{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.1);
+}
+
+@media only screen and (width< 600px) {
+    .reseñas{grid-template-columns: repeat(2, 1fr);}
+}
+
+footer{
+    font-family: "Chivo", sans-serif;
+    font-size: medium;
+}
+
+.redes_sociales i, .medios_pago i{
+   margin: 5px 20px;
+   font-size: 1.5em;
+}
+
+.mostrar-productos{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    padding: 20px 40px 20px 40px;
+}
+
+#productos-ref {
+    cursor: pointer;
+}
+
+#carrito{
+    padding: 25px 50px 25px 50px;
+    align-items: center;
+}
+
+#carrito h2{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+}
+#productos-carrito {
+    border-collapse: collapse;
+    width: 60%;
+    margin: auto;
+  }
+  
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+tr:hover {
+    background-color: #f1f1f1; 
+    cursor: pointer; 
+  }
+
+#totalCarrito{
+    text-align: right;
+    padding: 30px;
+    font-style: oblique;
+}
+
+#totalCarrito button{
+    margin: 10px;
+}
+
+#msj-vacio{
+    text-align: right;
+    text-shadow: none;
+    margin: 60px;
+}
+
+#btn-volver{
+    text-align: right;
+    margin: 20px;
+}
